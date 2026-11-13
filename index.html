@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clear Data Lab | Dashboards and automated reports</title>
-<meta name="description" content="Clear Data Lab builds Power BI and Excel dashboards and automated reports for clinics, pharmacies, labs and retail businesses.">
+<meta name="description" content="Clear Data Lab builds Power BI and Excel dashboards and automated reports for any business: shops, online stores, restaurants, clinics, service firms and more.">
 <meta property="og:title" content="Clear Data Lab">
-<meta property="og:description" content="Dashboards that update themselves. Power BI, Excel, SQL and Python for healthcare and retail.">
+<meta property="og:description" content="Dashboards that update themselves. Power BI, Excel, SQL and Python for any business.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314B8A6'/%3E%3Crect x='7' y='16' width='4' height='9' rx='1' fill='white'/%3E%3Crect x='14' y='11' width='4' height='14' rx='1' fill='white'/%3E%3Crect x='21' y='6' width='4' height='19' rx='1' fill='%23FBBF24'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,6 +168,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,27,51,.92);backdrop-f
 .fbox.hi b{color:var(--teal-d)}
 .farrow{color:var(--teal);font-weight:700;font-size:20px}
 .flow .farrow:nth-child(4){grid-column:1/-1;text-align:center;transform:rotate(90deg)}
+.thanks{background:rgba(94,234,212,.12);border:1px solid rgba(94,234,212,.4);border-radius:12px;padding:22px;color:#E2E8F0;font-size:16px}
+.thanks b{color:var(--mint);font-size:19px}
+.fstatus{font-size:14px;color:#FCA5A5}.fstatus a{color:var(--mint)}
+.inds{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 /* faq */
 .faq{max-width:780px;margin:40px auto 0}
 details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
@@ -245,7 +249,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="rv">
       <span class="pill"><span class="dot"></span> Taking new projects and remote roles</span>
       <h1>Your business already has the answers. <span class="hl">We turn them into dashboards.</span></h1>
-      <p class="lead">Power BI and Excel dashboards that update themselves, for clinics, pharmacies, labs and retail. Clean data, clear numbers, every morning.</p>
+      <p class="lead">Power BI and Excel dashboards that update themselves, for any business: shops, online stores, restaurants, clinics, service firms and more. Clean data, clear numbers, every morning.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#contact">Get a free data check →</a>
         <a class="btn btn-ghost" href="#work">See the work</a>
@@ -260,13 +264,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <!-- live demo -->
     <div class="demo rv" aria-label="Interactive demo dashboard">
       <div class="demo-top">
-        <span class="demo-title" id="d-title">Clinic: visits by hour</span>
+        <span class="demo-title" id="d-title">Online shop: orders by month</span>
         <span class="tag">Interactive · sample figures</span>
       </div>
       <div class="tabs" role="tablist">
-        <button class="on" data-k="clinic" role="tab">Clinic</button>
-        <button data-k="pharmacy" role="tab">Pharmacy</button>
-        <button data-k="shop" role="tab">Online shop</button>
+        <button class="on" data-k="shop" role="tab">Online shop</button>
+        <button data-k="food" role="tab">Restaurant</button>
+        <button data-k="clinic" role="tab">Clinic</button>
       </div>
       <div class="kpis" id="d-kpis"></div>
       <div class="chart-box">
@@ -291,7 +295,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="rv">
       <div class="kicker">Sound familiar?</div>
       <h2 class="sec-title">Data everywhere. Answers nowhere.</h2>
-      <p class="sec-lead">Most small businesses don't need more data. They need the data they already have to make sense.</p>
+      <p class="sec-lead">Whatever you sell or run, you don't need more data. You need the data you already have to make sense.</p>
+      <div class="inds"><span class="chip">Retail shops</span><span class="chip">Online stores</span><span class="chip">Restaurants</span><span class="chip">Healthcare</span><span class="chip">Logistics</span><span class="chip">Real estate</span><span class="chip">Schools</span><span class="chip">Service businesses</span></div>
     </div>
     <div class="cards3">
       <div class="card rv"><div class="ic">🗂️</div><h3>Ten spreadsheets, one question</h3><p>Sales in one file, stock in another, patients in a third. Getting one answer takes a whole afternoon.</p></div>
@@ -307,7 +312,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="rv">
       <div class="kicker">Selected work</div>
       <h2 class="sec-title">Real problems, solved end to end</h2>
-      <p class="sec-lead">Built from real reporting work in healthcare. Figures shown are samples: client data is never put on display.</p>
+      <p class="sec-lead">Built from real reporting work. The same methods work for any business with sales, stock, customers or staff. Figures shown are samples: client data is never put on display.</p>
     </div>
 
     <article class="proj rv">
@@ -435,13 +440,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="rv">
       <div class="kicker">About Clear Data Lab</div>
       <h2 class="sec-title">A data analyst who speaks business, not jargon.</h2>
-      <p>Clear Data Lab is run by a data analyst based in Lagos, working with clients worldwide. Since 2022 I've built the reporting behind a multi-clinic healthcare provider: patient visits, pharmacy and lab sales, memberships and staff performance.</p>
+      <p>Clear Data Lab is run by a data analyst based in Lagos, working with clients worldwide. Since 2022 I've built the reporting behind a multi-branch business: visits, sales, stock, memberships and staff performance.</p>
+      <p>Today I work with businesses of every kind: shops, online stores, restaurants, service firms and clinics. Sales, stock, customers and staff follow the same rules wherever they are.</p>
       <p>Before data, I worked closely with senior leaders, so I know what a busy owner needs from a report: one clear answer, not fifteen charts.</p>
       <div class="facts">
-        <div class="fact"><b>Since 2022</b><span>building healthcare reporting</span></div>
+        <div class="fact"><b>Since 2022</b><span>building business reporting</span></div>
         <div class="fact"><b>11</b><span>page Power BI report in production</span></div>
         <div class="fact"><b>228</b><span>automatic data checks</span></div>
-        <div class="fact"><b>3</b><span>sectors: health, retail, fintech</span></div>
+        <div class="fact"><b>Any</b><span>business: sales, stock, customers, staff</span></div>
       </div>
     </div>
     <div class="hire rv">
@@ -451,7 +457,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <ul>
         <li>Power BI, DAX, Excel, SQL and Python</li>
         <li>Automated pipelines and data quality checks</li>
-        <li>Healthcare, retail and payments data</li>
+        <li>Sales, operations, healthcare and payments data</li>
         <li>Remote, overlapping with EMEA and US hours</li>
       </ul>
       <div class="row">
@@ -504,8 +510,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <option>Monthly report</option>
           <option>Job or contract role</option>
         </select>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <textarea name="msg" rows="4" placeholder="What does your business track today? (sales, stock, patients...)"></textarea>
         <button class="btn btn-primary" type="submit" style="justify-content:center">Send message</button>
+        <p id="fstatus" class="fstatus" role="status"></p>
       </form>
     </div>
   </div>
@@ -533,6 +541,11 @@ const D={
     labels:["Insulin","Salbut.","Multivit","Losartan","Amoxi","Cipro","Artem.","Lisinop.","Amlod.","Omepr."],
     vals:[99.5,34.0,25.2,24.6,24.0,22.4,20.5,20.4,17.3,14.9],fmt:v=>"₦"+v.toFixed(1)+"M",
     insight:"<b>Insight:</b> One product is a quarter of sales. It needs a reorder alert before it runs out."},
+  food:{title:"Restaurant: orders by weekday",chart:"Orders by day of week (last 90 days)",
+    kpis:[["Orders","9,240","last 90 days","up"],["Avg order","₦6,850","+8% on last quarter","up"],["Busiest day","Saturday","+87% vs Monday","up"]],
+    labels:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+    vals:[1010,1080,1150,1270,1425,1890,1415],
+    insight:"<b>Insight:</b> Saturday is nearly double Monday. Put the strongest team on Saturday and run a Monday deal."},
   shop:{title:"Online shop: orders by month",chart:"Orders per month",
     kpis:[["Orders","4,812","last 12 months","up"],["Repeat buyers","31%","+6 pts on last year","up"],["Unpaid orders","9%","sold, not collected","down"]],
     labels:["Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov"],
@@ -554,7 +567,7 @@ function render(k){
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(b.dataset.k);
 });
-render('clinic');
+render('shop');
 
 /* project charts reuse the same sample data */
 document.querySelectorAll('.mini').forEach(m=>{
@@ -571,11 +584,23 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 /* close mobile menu on link click */
 document.querySelectorAll('.nav-links a').forEach(a=>a.onclick=()=>document.querySelector('.nav-links').classList.remove('open'));
 
-/* contact form: opens email for now (swap for a form service later) */
-document.getElementById('cform').onsubmit=e=>{
-  e.preventDefault();const f=e.target;
-  const body=`Name: ${f.name.value}\nEmail: ${f.email.value}\nTopic: ${f.topic.value}\n\n${f.msg.value}`;
-  location.href=`mailto:cleardatalab@gmail.com?subject=${encodeURIComponent('Website: '+f.topic.value)}&body=${encodeURIComponent(body)}`;
+/* contact form: sent by FormSubmit straight to the Gmail inbox */
+const FORM_URL='https://formsubmit.co/ajax/cleardatalab@gmail.com';
+document.getElementById('cform').onsubmit=async e=>{
+  e.preventDefault();const f=e.target,btn=f.querySelector('button'),st=document.getElementById('fstatus');
+  if(f._honey.value)return;
+  btn.disabled=true;btn.textContent='Sending...';st.textContent='';
+  try{
+    const r=await fetch(FORM_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name:f.name.value,email:f.email.value,topic:f.topic.value,message:f.msg.value,
+        _subject:'New website enquiry: '+f.topic.value,_replyto:f.email.value,_template:'table'})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok||j.success==='false'||j.success===false)throw 0;
+    f.innerHTML='<div class="thanks"><b>Thank you, message sent.</b><br>I&rsquo;ll reply within 24 hours. Check your inbox (and spam, just in case).</div>';
+  }catch(_){
+    btn.disabled=false;btn.textContent='Send message';
+    st.innerHTML='Sorry, that didn&rsquo;t go through. Please email <a href="mailto:cleardatalab@gmail.com">cleardatalab@gmail.com</a> directly.';
+  }
 };
 </script>
 </body>
