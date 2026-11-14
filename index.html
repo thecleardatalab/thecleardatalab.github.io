@@ -180,6 +180,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,27,51,.92);backdrop-f
 .fs-cta{display:flex;flex-direction:column;align-items:center;gap:10px}
 .fs-alt{font-size:14px;color:var(--teal-d);font-weight:600}
 @media (max-width:760px){.fs-box{grid-template-columns:1fr;padding:24px 20px;gap:16px}.fs-cta{align-items:stretch}.fs-cta .btn{justify-content:center}}
+.amt.quote{font-size:22px;color:var(--teal-d);margin:14px 0 6px}
+.founding{display:inline-flex;align-items:center;gap:10px;margin-top:20px;background:#FEF3C7;color:#92400E;border:1px solid #FCD34D;padding:10px 16px;border-radius:12px;font-size:15px}
+.founding b{color:#78350F}
+.fdot{width:8px;height:8px;border-radius:50%;background:var(--amber-d);flex:none}
 /* faq */
 .faq{max-width:780px;margin:40px auto 0}
 details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
@@ -384,43 +388,44 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <section id="services" class="services" style="background:var(--paper)">
   <div class="wrap">
     <div class="rv">
-      <div class="kicker">Services and pricing</div>
-      <h2 class="sec-title">Clear prices. No surprises.</h2>
-      <p class="sec-lead">Start free. If the quick wins help, pick the package that fits. Every package ends with a handover so your team can use it on day one.</p>
+      <div class="kicker">Services</div>
+      <h2 class="sec-title">Packages that fit your business</h2>
+      <p class="sec-lead">Start free. If the quick wins help, pick the package that fits. Every price is quoted for your business and agreed before any work starts. Every package ends with a handover so your team can use it on day one.</p>
+      <div class="founding rv"><span class="fdot"></span><b>Founding client offer:</b> my first 3 clients get 50% off any package.</div>
     </div>
     <div class="price-grid">
       <div class="price free rv">
         <h3>Free Data Check</h3>
-        <div class="amt">$0</div>
+        <div class="amt">Free</div>
         <p class="for">Not sure where to start? Start here.</p>
         <ul><li>Send one file</li><li>3 quick wins in 48 hours</li><li>Plain-language notes</li><li>No obligation</li></ul>
         <a class="btn btn-primary" href="#contact">Send my file</a>
       </div>
       <div class="price rv">
         <h3>Starter</h3>
-        <div class="amt">$150</div>
+        <div class="amt quote">Ask for a quote</div>
         <p class="for">One clear dashboard from one data file.</p>
         <ul><li>Data cleaned and checked</li><li>1-page dashboard, up to 6 visuals</li><li>Excel or Power BI</li><li>1 round of changes</li><li>Delivered in 3 days</li></ul>
-        <a class="btn btn-dark" href="#contact">Choose Starter</a>
+        <a class="btn btn-dark" href="#contact">Get a quote</a>
       </div>
       <div class="price feat rv">
         <span class="badge">Most popular</span>
         <h3>Standard</h3>
-        <div class="amt">$350</div>
+        <div class="amt quote">Ask for a quote</div>
         <p class="for">A full dashboard across your key numbers.</p>
         <ul><li>Up to 3 data sources joined</li><li>3-page interactive dashboard</li><li>Filters by date, branch, product</li><li>2 rounds of changes</li><li>Handover video</li><li>Delivered in 7 days</li></ul>
-        <a class="btn btn-primary" href="#contact">Choose Standard</a>
+        <a class="btn btn-primary" href="#contact">Get a quote</a>
       </div>
       <div class="price rv">
         <h3>Premium</h3>
-        <div class="amt">$700</div>
+        <div class="amt quote">Ask for a quote</div>
         <p class="for">Reporting that runs itself.</p>
         <ul><li>Everything in Standard</li><li>Automated daily or weekly refresh</li><li>Accuracy checks built in</li><li>Up to 6 pages</li><li>Live handover call</li><li>30 days of support</li></ul>
-        <a class="btn btn-dark" href="#contact">Choose Premium</a>
+        <a class="btn btn-dark" href="#contact">Get a quote</a>
       </div>
     </div>
     <div class="monthly rv">
-      <div><b>Need it every month?</b> <span style="color:var(--muted)">Monthly auto-report with a short summary of what changed. From $100 / month.</span></div>
+      <div><b>Need it every month?</b> <span style="color:var(--muted)">Monthly auto-report with a short summary of what changed. Priced to fit your size.</span></div>
       <a class="btn btn-dark" href="#contact">Ask about monthly</a>
     </div>
   </div>
@@ -532,9 +537,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <input name="email" type="email" placeholder="Email" required>
         <select name="topic">
           <option>Free data check</option>
-          <option>Starter ($150)</option>
-          <option>Standard ($350)</option>
-          <option>Premium ($700)</option>
+          <option>Starter</option>
+          <option>Standard</option>
+          <option>Premium</option>
           <option>Monthly report</option>
           <option>Job or contract role</option>
         </select>
